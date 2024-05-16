@@ -1,0 +1,22 @@
+{
+  "name": "decensored-static",
+  "version": "1.0.1",
+  "description": "static file for decensored",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douchaoyang/npmjs.git"
+  },
+  "keywords": [
+    "decensored"
+  ],
+  "author": "douchaoyang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douchaoyang/npmjs/issues"
+  },
+  "homepage": "https://github.com/douchaoyang/npmjs#readme"
+}
