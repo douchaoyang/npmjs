@@ -952,7 +952,7 @@ div.token-input-dropdown ul li.token-input-selected-dropdown-item { background-c
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 9;
   padding: 0!important;
-  background-position: center center;
+  background-position: center 16px;
 }
