@@ -24,7 +24,8 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.75) url(../img/loading.gif) no-repeat center
+    center;
   z-index: 9527;
   overflow: auto;
   display: none;
