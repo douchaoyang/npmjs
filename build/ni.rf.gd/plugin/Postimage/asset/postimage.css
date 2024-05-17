@@ -1,0 +1,26 @@
+#pi-button {
+  height: 28px;
+  position: relative;
+}
+#pi-button .loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  padding: 0 !important;
+  background-color: #fff !important;
+  background-position: center center !important;
+  display: none;
+}
+#pi-button button {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+#pi-button input {
+  display: none;
+}
