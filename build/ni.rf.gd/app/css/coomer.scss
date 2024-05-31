@@ -1,0 +1,123 @@
+$primay: #ffa202;
+/* 主体 */
+body {
+  padding: 32px 0;
+}
+#app {
+  margin: 0 auto;
+  width: 1008px;
+  max-width: 100%;
+  background: #0f0f0f;
+  position: relative;
+  border-radius: 4px;
+}
+
+/* 底部 */
+#footer {
+  text-align: center;
+  line-height: 32px;
+}
+
+/* 内容区 */
+#main {
+  padding: 8px;
+  overflow: hidden;
+  a {
+    transition: color ease 0.5s;
+    &:hover {
+      color: $primay;
+    }
+  }
+}
+
+.coomer-main {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      width: 480px;
+      margin: 8px;
+      max-width: 100%;
+      a {
+        display: block;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        .avatar {
+          flex-shrink: 0;
+          width: 100px;
+          height: 100px;
+          border-radius: 8px;
+          overflow: hidden;
+          margin-right: 16px;
+          background: #000
+            url("https://unpkg.com/decensored-static@7.0.0/build/ni.rf.gd/app/img/loading.gif")
+            no-repeat center center;
+          background-size: 24px;
+          img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .userinfo {
+          .service {
+            display: inline-block;
+            font-size: 14px;
+            background: rgb(0, 140, 207);
+            padding: 0 6px;
+            font-weight: 700;
+            line-height: 24px;
+            border-radius: 4px;
+            color: #fff !important;
+          }
+          .name {
+            display: block;
+            font-size: 28px;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .favor {
+            display: block;
+            font-size: 16px;
+            color: #fff !important;
+            b {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.paginator {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  a,
+  b {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    min-width: 30px;
+    padding: 0 12px;
+    color: #fff;
+    margin: 0 4px;
+    background: #333;
+    border-radius: 4px;
+  }
+  b {
+    color: $primay;
+    background: none;
+  }
+}
