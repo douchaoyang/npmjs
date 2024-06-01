@@ -46,13 +46,13 @@ body {
         display: flex;
         align-items: center;
         color: #fff;
-        border-radius: 8px;
+        border-radius: 4px;
         overflow: hidden;
         .avatar {
           flex-shrink: 0;
           width: 100px;
           height: 100px;
-          border-radius: 8px;
+          border-radius: 4px;
           overflow: hidden;
           margin-right: 16px;
           background: #000
@@ -98,7 +98,69 @@ body {
   }
 }
 
-.paginator {
+.coomer-creator {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      width: 232px;
+      height: 232px;
+      margin: 8px;
+      max-width: 100%;
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url("https://unpkg.com/decensored-static@7.0.0/build/ni.rf.gd/app/img/loading.gif")
+          no-repeat center center;
+      background-size: 24px;
+      &.mp4,
+      &.m4v,
+      &.mov {
+        &:after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          border: 4px solid $primay;
+          box-sizing: border-box;
+          border-radius: 4px;
+          pointer-events: none;
+        }
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+      video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 9;
+      }
+    }
+  }
+}
+
+.paginator,
+.navigator {
   padding: 16px;
   display: flex;
   align-items: center;
