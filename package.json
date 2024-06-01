@@ -1,6 +1,6 @@
 {
   "name": "decensored-static",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "unpkg.com/:package@:version/:file",
   "main": "main.js",
   "scripts": {
