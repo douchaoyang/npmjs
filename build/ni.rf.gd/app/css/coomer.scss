@@ -12,6 +12,78 @@ body {
   border-radius: 4px;
 }
 
+/* 顶部 */
+#header {
+  position: relative;
+  h1 {
+    padding: 40px 20px;
+    position: relative;
+
+    .search {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      border-bottom: 1px solid #000;
+      input {
+        width: 100%;
+        background: transparent;
+        border: 0;
+        appearance: none;
+        text-align: center;
+        color: #fff;
+        font-size: 26px;
+        border-bottom: 1px solid transparent;
+        transition: all ease 0.5s;
+        padding: 0 32px;
+        &:focus {
+          border-bottom-color: $primay;
+        }
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+  .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: $primay;
+  }
+  .description {
+    font-size: 14px;
+    color: #858585;
+    font-style: italic;
+  }
+  .nav {
+    background: #333;
+    background: -moz-linear-gradient(#383838, #272727);
+    background: -webkit-gradient(
+      linear,
+      0% 0%,
+      0% 100%,
+      from(#383838),
+      to(#272727)
+    );
+    background: -webkit-linear-gradient(#383838, #272727);
+    border-bottom: 1px solid #222;
+    border-radius: 4px;
+    padding: 0 10px;
+    ul {
+      overflow: hidden;
+      li {
+        float: left;
+        a {
+          display: block;
+          color: #eee;
+          line-height: 44px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
 /* 底部 */
 #footer {
   text-align: center;
